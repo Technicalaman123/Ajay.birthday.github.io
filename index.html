@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('birthday_background.jpg'); /* Replace 'birthday_background.jpg' with your image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HAPPY BIRTHDAY AJAY😉 </h1>
+    <p>Ajay bhai party debu ki nai Yes or NO😁 ?</p>
+    <form>
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Yes or No Buttons</title>
+    <style>
+        /* Add some basic styling */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.5s; /* Transition for smooth sliding animation */
+        }
+
+        #yesButton {
+            background-color: red; /* Set the background color of the "Yes" button to red */
+        }
+
+        #noButton {
+            background-color: blue; /* Set the background color of the "No" button to blue */
+        }
+    </style>
+</head>
+<body>
+    <button id="yesButton">Yes</button>
+    <button id="noButton">No</button>
+
+    <script>
+        // JavaScript code to handle button clicks
+        document.getElementById("noButton").addEventListener("click", function() {
+            // Slide the "No" button to a new position without taking touch input
+            var button = document.getElementById("noButton");
+            var maxX = window.innerWidth - button.offsetWidth;
+            var maxY = window.innerHeight - button.offsetHeight;
+            var newX = Math.random() * maxX;
+            var newY = Math.random() * maxY;
+            button.style.transform = `translate(${newX}px, ${newY}px)`;
+        });
+
+        document.getElementById("yesButton").addEventListener("click", function() {
+            // Show a greeting message and open the specified URL
+            alert("Thanks for the party!");
+            window.open("https://wa.me/7077086069?text=yes_jarur");
+        });
+    </script>
+</body>
+</html>
+
